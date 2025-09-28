@@ -15,11 +15,19 @@ By the end of this lab, I successfully:
 - Tested **termination protection** before safely terminating the instance.
 
 ## Architecture Diagram
-![EC2 Lab Architecture](diagram.png)  
+
+![EC2 Lab Architecture]
+(<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/5447b70f-2dd0-4083-85b2-627842769089" />
+
+
+![EC2 Instance Running](screenshot<img width="1905" height="853" alt="Screenshot (43)" src="https://github.com/user-attachments/assets/aee7eb4b-563f-4f35-9511-b55031eb1ad0" />
+s/ec2-dashboard.png)
+
+![Web Server Output](screenshots/webpage.png)<img width="1646" height="696" alt="Screenshot (44)" src="https://github.com/user-attachments/assets/c0a7b7e1-c350-4bb9-ab87-3a25d77083c2" />
+
+
 *EC2 instance running Apache Web Server, secured by Security Group, monitored with CloudWatch, attached to EBS storage.*
 
-## Duration
-⏱️ ~45 minutes
 
 ## Skills Practiced
 - AWS Management Console
@@ -29,7 +37,5 @@ By the end of this lab, I successfully:
 - EBS storage management
 - Termination protection best practices
 
-## Next Steps
-- Automate EC2 provisioning with **Terraform/CloudFormation**.
-- Explore **IAM roles** and EC2 instance profiles for security.
-- Configure **detailed CloudWatch monitoring**.
+
+#aws, #ec2, #cloud, #cloud-security, #portfolio.
