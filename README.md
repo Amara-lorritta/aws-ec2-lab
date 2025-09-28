@@ -14,6 +14,29 @@ By the end of this lab, I successfully:
 - Resized the instance type (**t3.micro → t3.small**) and expanded EBS volume (8 GiB → 10 GiB).
 - Tested **termination protection** before safely terminating the instance.
 
+
+## Steps I Completed
+
+•	I launched an Amazon Linux EC2 instance (t3.micro) and chose Proceed without a key pair (no SSH key created).
+
+•	In Advanced Details → User Data, I provided a bash script to install and start Apache and create a simple HTML page.
+
+•	I enabled Termination Protection for the instance.
+
+•	I verified instance Status Checks (2/2) and basic CloudWatch metrics.
+
+•	I attempted to access the public IP and discovered the Security Group had no inbound rules, preventing web access.
+
+•	I updated the Security Group inbound rules to allow HTTP (port 80) from Anywhere (0.0.0.0/0).
+
+•	I accessed the web page at the instance’s public IPv4 address and confirmed the message:
+“Hello From Your Web Server!”
+
+•	I stopped the instance, changed the instance type from t3.micro → t3.small, and modified the EBS volume size from 8 GiB → 10 GiB, then started the instance again.
+
+•	I tested termination protection by attempting to terminate the instance (it failed while protection was enabled), then disabled termination protection and terminated the instance successfully
+
+
 ## Architecture Diagram
 
 ![EC2 Lab Architecture]
